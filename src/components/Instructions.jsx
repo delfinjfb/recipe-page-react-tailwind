@@ -2,9 +2,9 @@ import React from "react";
 
 const Instructions = () => (
 	<div className="my-4 border-y-2 py-4">
-		<h3 className="text-lg font-serif font-bold text-brown-800">
+		<h2 className="text-lg font-serif font-bold text-brown-800">
 			Instructions
-		</h3>
+		</h2>
 		<ol className="list-decimal list-inside text-stone-600 marker:text-brown-800 marker:font-bold ">
 			<li className="">
 				<strong>Beat the eggs:</strong> In a bowl, beat the eggs with a pinch of

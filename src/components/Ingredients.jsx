@@ -2,7 +2,7 @@ import React from "react";
 
 const Ingredients = () => (
 	<div className="my-4">
-		<h3 className="text-lg font-serif font-bold text-brown-800">Ingredients</h3>
+		<h2 className="text-lg font-serif font-bold text-brown-800">Ingredients</h2>
 		<ul className="list-disc list-inside text-stone-600 mt-2">
 			<li>2-3 large eggs</li>
 			<li>Salt, to taste</li>

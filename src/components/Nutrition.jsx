@@ -2,7 +2,7 @@ import React from "react";
 
 const Nutrition = () => (
 	<div className="my-4">
-		<h3 className="text-lg font-serif font-bold text-brown-800">Nutrition</h3>
+		<h2 className="text-lg font-serif font-bold text-brown-800">Nutrition</h2>
 		<p className="p-4">
 			The table below shows nutritional values per serving without the
 			additional fillings.

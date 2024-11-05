@@ -2,9 +2,9 @@ import React from "react";
 
 const TimeInfo = () => (
 	<div className="bg-rose-50 p-4 rounded-lg my-4 text-stone-900">
-		<h3 className="text-lg font-sans font-bold text-rose-800">
+		<h2 className="text-lg font-sans font-bold text-rose-800">
 			Preparation time
-		</h3>
+		</h2>
 
 		<ul className="text-stone-600 list-disc list-inside">
 			<li>
