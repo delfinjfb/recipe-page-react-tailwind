@@ -7,7 +7,7 @@ import Instructions from "./Instructions";
 import Nutrition from "./Nutrition";
 
 const RecipeCard = () => (
-	<div className="bg-white shadow-md rounded-lg max-w-lg mx-auto p-6 sm:max-w-[375px] md:max-w-[1440px]">
+	<div className="bg-white shadow-md rounded-lg max-w-lg mx-auto p-10 sm:max-w-[375px] md:max-w-[820px]">
 		<RecipeImage />
 		<div className=" p-4">
 			<RecipeTitle />
