@@ -2,7 +2,7 @@ import React from "react";
 
 const RecipeTitle = () => (
 	<div className=" p-4">
-		<h1 className="text-2xl font-serif font-bold text-stone-900">
+		<h1 className="text-5xl font-serif mt-3 mb-8 font-bold text-stone-900">
 			Simple Omelette Recipe
 		</h1>
 		<p className="text-stone-600 mt-2">
