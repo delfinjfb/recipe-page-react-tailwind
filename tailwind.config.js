@@ -20,6 +20,14 @@ module.exports = {
 			fontFamily: {
 				serif: ["Young Serif", "serif"],
 				sans: ["Outfit", "sans-serif"]
+			},
+			spacing: {
+				9: "2.375rem",
+				13: "3.25rem",
+				15: "3.75rem",
+				20: "9.5rem",
+				128: "32rem",
+				144: "36rem"
 			}
 		}
 	},
