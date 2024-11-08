@@ -1,10 +1,28 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Young+Serif&display=swap");
 
 body {
 	font-family: "Outfit", sans-serif;
 }
 
-h1,
 h2 {
-	font-family: "Young Serif", serif;
+	@apply text-3xl font-serif  ml-0 mx-8 my-4 text-brown-800;
+}
+
+ol {
+	@apply list-decimal text-stone-600 marker:text-brown-800 marker:font-bold list-outside ml-4;
+}
+ol > li {
+	@apply pl-6 py-2;
+}
+/* ul */
+.ul4 {
+	@apply m-4;
+}
+.ul3 {
+	@apply m-3;
 }
