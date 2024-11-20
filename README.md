@@ -1,70 +1,163 @@
-# Getting Started with Create React App
+# React Recipe Page with Tailwind CSS
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a responsive recipe page built with **React** and styled using **Tailwind CSS**. It dynamically displays recipes from a JSON file, including information such as ingredients, instructions, preparation time, nutrition, and an image for each recipe. Users can navigate through the recipes using a "Next Recipe" button, which smoothly scrolls to the top of the page.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Table of Contents
 
-### `npm start`
+- [Demo](#demo)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Setup](#setup)
+- [Usage](#usage)
+- [Folder Structure](#folder-structure)
+- [License](#license)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Demo
 
-### `npm test`
+![Recipe Page Screenshot](https://recipe-page-react-tailwind-delfin.vercel.app/public/images/project-screenshot.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Check out the live demo: [\[Insert your deployment link here\]](https://recipe-page-react-tailwind-delfin.vercel.app/)
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Features
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Responsive Design**: Optimized for mobile and desktop (375px to 1440px widths).
+- **Dynamic Recipes**: Recipes are fetched from a JSON file.
+- **Navigation**: Smooth scrolling when navigating to the next recipe.
+- **Accessibility**: Includes skip links, proper semantic HTML, and ARIA roles.
+- **Styling**: Consistent design using Tailwind CSS.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## Technologies Used
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **React**: A JavaScript library for building user interfaces.
+- **Tailwind CSS**: A utility-first CSS framework.
+- **PropTypes**: For prop validation.
+- **JSON**: Static data for recipes.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Setup
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Prerequisites
 
-## Learn More
+- Node.js and npm installed on your computer.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Installation
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/delfinjfb/FEM-QR-code-component.git
+   cd recipe-page
+2. Install dependencies:
+   ```bash
+   npm install
+3. Start the development server:
+  ```bash
+  npm start
+4. Open your browser at http://localhost:3000.
+ 
 
-### Code Splitting
+ 
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Usage
 
-### Analyzing the Bundle Size
+- Click the "Next Recipe" button to view the next recipe.
+- Recipes are displayed with:
+  - A title and description.
+  - Ingredients and instructions.
+  - Nutrition facts in a tabular format.
+  - An image of the recipe.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## Folder Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+src/
+├── components/
+│   ├── Footer.jsx
+│   ├── Instructions.jsx
+│   ├── Nutrition.jsx
+│   ├── RecipeCard.jsx
+│   ├── RecipeImage.jsx
+│   ├── RecipeTitle.jsx
+│   └── TimeInfo.jsx
+├── data/
+│   └── recipes.json
+├── App.js
+├── index.js
+└── styles/
+    └── app.css
 
-### Advanced Configuration
+- components/: Contains reusable React components for different sections of the page.
+- data/recipes.json: Stores static data for recipes.
+- styles/: Contains the global styles and Tailwind CSS configuration.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## JSON Structure
+Here’s an example of the JSON data used for recipes:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+[
+  {
+    "code": "omelette",
+    "title": "Simple Omelette Recipe",
+    "image": "/images/image-omelette.jpeg",
+    "description": "An easy and quick dish, perfect for any meal.",
+    "preparationTime": {
+      "total": "10 minutes",
+      "preparation": "5 minutes",
+      "cooking": "5 minutes"
+    },
+    "ingredients": [
+      "2-3 large eggs",
+      "Salt, to taste",
+      "Pepper, to taste",
+      "1 tablespoon of butter or oil"
+    ],
+    "instructions": [
+      {
+        "step": 1,
+        "description": "Beat the eggs with salt and pepper."
+      },
+      {
+        "step": 2,
+        "description": "Heat a non-stick pan and add butter."
+      }
+    ],
+    "nutrition": [
+      {
+        "nutrient": "calories",
+        "value": "277kcal"
+      },
+      {
+        "nutrient": "protein",
+        "value": "20g"
+      }
+    ]
+  }
+]
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+---
+
+## Acknowledgments
+
+Challenge by Frontend Mentor.
+Coded by Delfin Fernandez.
+
+
+
+
