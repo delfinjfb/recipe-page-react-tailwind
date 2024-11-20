@@ -1,23 +1,34 @@
 import React from "react";
+import PropTypes from "prop-types";
 
-const TimeInfo = () => (
-	<div className="bg-rose-50 p-4 rounded-lg mt-4 mb-8 text-stone-900">
-		<h2 className="text-2xl  font-sans font-bold text-rose-800">
-			Preparation time
-		</h2>
+const TimeInfo = ({preparationTime}) => {
+	const {total, preparation, cooking} = preparationTime;
+	return (
+		<div className="bg-rose-50 p-4 rounded-lg mt-4 mb-8 text-stone-900">
+			<h2 className="text-2xl  font-sans font-bold text-rose-800">
+				Preparation time
+			</h2>
 
-		<ul className="text-stone-600 list-disc list-inside -mb-4">
-			<li className="ul4">
-				<strong>Total:</strong> 10 minutes{" "}
-			</li>
-			<li className="ul4">
-				<strong>Preparation:</strong> 5 minutes
-			</li>
-			<li className="ul4">
-				<strong>Cooking:</strong> 5 minutes{" "}
-			</li>
-		</ul>
-	</div>
-);
+			<ul className="text-stone-600 list-disc list-inside -mb-4">
+				<li className="ul4">
+					<strong>Total:</strong> {total}
+				</li>
+				<li className="ul4">
+					<strong>Preparation:</strong> {preparation}
+				</li>
+				<li className="ul4">
+					<strong>Cooking:</strong> {cooking}
+				</li>
+			</ul>
+		</div>
+	);
+};
+TimeInfo.propTypes = {
+	preparationTime: PropTypes.shape({
+		total: PropTypes.string.isRequired,
+		preparation: PropTypes.string.isRequired,
+		cooking: PropTypes.string.isRequired
+	}).isRequired
+};
 
 export default TimeInfo;

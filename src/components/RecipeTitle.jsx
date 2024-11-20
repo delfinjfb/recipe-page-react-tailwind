@@ -1,16 +1,18 @@
 import React from "react";
+import PropTypes from "prop-types";
 
-const RecipeTitle = () => (
-	<div className=" p-4">
-		<h1 className="text-5xl font-serif mt-3 mb-8 font-bold text-stone-900">
-			Simple Omelette Recipe
-		</h1>
-		<p className="text-stone-600 mt-2">
-			An easy and quick dish, perfect for any meal. This classic omelette
-			combines beaten eggs cooked to perfection, optionally filled with your
-			choice of cheese, vegetables, or meats.
-		</p>
-	</div>
-);
+const RecipeTitle = ({title, description}) => {
+	return (
+		<div className="mb-4">
+			<h1 className="text-3xl font-serif text-brown-800 -ml-4">{title}</h1>
+			<p className="text-base text-stone-600 mt-2">{description}</p>
+		</div>
+	);
+};
+
+RecipeTitle.propTypes = {
+	title: PropTypes.string.isRequired,
+	description: PropTypes.string.isRequired
+};
 
 export default RecipeTitle;
