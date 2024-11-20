@@ -1,0 +1,124 @@
+[
+	{
+		"code": "omelette",
+		"title": "Simple Omelette Recipe",
+		"image": "/images/image-omelette.jpeg",
+		"description": "An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to perfection, optionally filled with your choice of cheese, vegetables, or meats.",
+		"preparationTime": {
+			"total": "Approximately 10 minutes",
+			"preparation": "5 minutes",
+			"cooking": "5 minutes"
+		},
+		"ingredients": [
+			"2-3 large eggs",
+			"Salt, to taste",
+			"Pepper, to taste",
+			"1 tablespoon of butter or oil",
+			"Optional fillings: cheese, diced vegetables, cooked meats, herbs"
+		],
+		"instructions": [
+			{
+				"step": 1,
+				"description": "Beat the eggs: In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. You can add a tablespoon of water or milk for a fluffier texture."
+			},
+			{
+				"step": 2,
+				"description": "Heat the pan: Place a non-stick frying pan over medium heat and add butter or oil."
+			},
+			{
+				"step": 3,
+				"description": "Cook the omelette: Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure the eggs evenly coat the surface."
+			},
+			{
+				"step": 4,
+				"description": "Add fillings (optional): When the eggs begin to set at the edges but are still slightly runny in the middle, sprinkle your chosen fillings over one half of the omelette."
+			},
+			{
+				"step": 5,
+				"description": "Fold and serve: As the omelette continues to cook, carefully lift one edge and fold it over the fillings. Let it cook for another minute, then slide it onto a plate."
+			},
+			{
+				"step": 6,
+				"description": "Enjoy: Serve hot, with additional salt and pepper if needed."
+			}
+		],
+		"nutrition": [
+			{
+				"nutrient": "calories",
+				"value": "277 kcal"
+			},
+			{
+				"nutrient": "carbs",
+				"value": "0g"
+			},
+			{
+				"nutrient": "protein",
+				"value": "20g"
+			},
+			{
+				"nutrient": "fat",
+				"value": "22g"
+			}
+		]
+	},
+	{
+		"code": "pancakes",
+		"title": "Classic Pancake Recipe",
+		"image": "/images/image-pancakes.jpeg",
+		"description": "Fluffy and delicious pancakes, perfect for breakfast or brunch. Top with syrup, fruit, or your favorite toppings.",
+		"preparationTime": {
+			"total": "Approximately 20 minutes",
+			"preparation": "10 minutes",
+			"cooking": "10 minutes"
+		},
+		"ingredients": [
+			"1 cup all-purpose flour",
+			"2 tablespoons sugar",
+			"2 teaspoons baking powder",
+			"1/2 teaspoon salt",
+			"1 cup milk",
+			"1 large egg",
+			"2 tablespoons melted butter or oil"
+		],
+		"instructions": [
+			{
+				"step": 1,
+				"description": "Mix dry ingredients: In a large bowl, whisk together the flour, sugar, baking powder, and salt."
+			},
+			{
+				"step": 2,
+				"description": "Combine wet ingredients: In a separate bowl, whisk together the milk, egg, and melted butter."
+			},
+			{
+				"step": 3,
+				"description": "Make the batter: Pour the wet ingredients into the dry ingredients and gently mix until combined. Do not overmix; lumps are fine."
+			},
+			{
+				"step": 4,
+				"description": "Cook the pancakes: Heat a non-stick skillet or griddle over medium heat. Grease lightly with butter or oil. Pour 1/4 cup of batter for each pancake."
+			},
+			{
+				"step": 5,
+				"description": "Flip and serve: When bubbles form on the surface and the edges look set, flip the pancakes. Cook until golden on both sides. Serve warm with your favorite toppings."
+			}
+		],
+		"nutrition": [
+			{
+				"nutrient": "calories",
+				"value": "195 kcal"
+			},
+			{
+				"nutrient": "carbs",
+				"value": "26g"
+			},
+			{
+				"nutrient": "protein",
+				"value": "5g"
+			},
+			{
+				"nutrient": "fat",
+				"value": "7g"
+			}
+		]
+	}
+]
