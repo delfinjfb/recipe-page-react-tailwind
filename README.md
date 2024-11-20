@@ -18,7 +18,7 @@ This is a responsive recipe page built with **React** and styled using **Tailwin
 
 ## Demo
 
-Check out the live demo: [\[Insert your deployment link here\]](https://recipe-page-react-tailwind-delfin.vercel.app/)
+Check out the live demo: [\[Demo\]](https://recipe-page-react-tailwind-delfin.vercel.app/)
 
 ![Recipe Page Screenshot](https://recipe-page-react-tailwind-delfin.vercel.app/images/ReactRecipePageTailwind.png)
 
@@ -122,31 +122,33 @@ Here’s an example of the JSON data used for recipes:
   "cooking": "5 minutes"
   },
   "ingredients": [
-  "2-3 large eggs",
-  "Salt, to taste",
-  "Pepper, to taste",
-  "1 tablespoon of butter or oil"
+    "2-3 large eggs",
+    "Salt, to taste",
+    "Pepper, to taste",
+    "1 tablespoon of butter or oil"
   ],
-  "instructions": [
-  {
-  "step": 1,
-  "description": "Beat the eggs with salt and pepper."
-  },
-  {
-  "step": 2,
-  "description": "Heat a non-stick pan and add butter."
-  }
-  ],
-  "nutrition": [
-  {
-  "nutrient": "calories",
-  "value": "277kcal"
-  },
-  {
-  "nutrient": "protein",
-  "value": "20g"
-  }
-  ]
+  "instructions":
+    [
+      {
+      "step": 1,
+      "description": "Beat the eggs with salt and pepper."
+      },
+      {
+      "step": 2,
+      "description": "Heat a non-stick pan and add butter."
+      }
+    ],
+  "nutrition":
+    [
+      {
+      "nutrient": "calories",
+      "value": "277kcal"
+      },
+      {
+      "nutrient": "protein",
+      "value": "20g"
+      }
+    ]
   }
 ]
 ```
@@ -164,6 +166,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 Challenge by Frontend Mentor.
 Coded by Delfin Fernandez.
 
-![Pancakes](https://www.realsimple.com/thmb/pancake-image-url.jpg)
-
-_Image by [Real Simple](<https://www.realsimple.com/thmb/u0FflZ0sazXanhitWueM3LaXkaw=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/how-to-make-pancakes-step-by-step-bf45f02d4b3c4392bddf92e05c9e17eb.jpg>), licensed under [Creative Commons](https://creativecommons.org/licenses/)._
+_Image of pancake by [Real Simple](<https://www.realsimple.com/thmb/u0FflZ0sazXanhitWueM3LaXkaw=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/how-to-make-pancakes-step-by-step-bf45f02d4b3c4392bddf92e05c9e17eb.jpg>), licensed under [Creative Commons](https://creativecommons.org/licenses/)._
