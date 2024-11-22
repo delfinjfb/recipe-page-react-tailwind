@@ -2,6 +2,7 @@ import React, {useEffect, useState} from "react";
 import RecipeCard from "./components/RecipeCard";
 import Footer from "./components/Footer";
 import recipesData from "./data/recipes.json";
+import Matomo from "./utils/Matomo";
 
 function App() {
 	const [currentIndex, setCurrentIndex] = useState(0);
@@ -21,6 +22,7 @@ function App() {
 
 	return (
 		<main role="main" className="bg-stone-100 min-h-screen p-4">
+			<Matomo />
 			<div className="max-w-4xl mx-auto">
 				<RecipeCard recipe={recipesData[currentIndex]} />
 				<div className="text-center my-6">
