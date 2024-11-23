@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const RecipeImage = ({src, alt}) => (
+const RecipeImage = ({src, alt = "" }) => (
 	<img
 		src={src}
 		alt={alt || ""}
