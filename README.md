@@ -35,8 +35,15 @@ Check out the live demo: [\[Demo\]](https://recipe-page-react-tailwind-delfin.ve
 - **Routing with Redirects**:
   - Root (`/`) and `/recipes/` paths redirect to the default recipe (`omelette`).
   - Dynamic routes like `/recipes/:recipeCode` display specific recipes.
+- **Adjustable Servings**:
+  - Users can select the number of servings for each recipe using a dropdown.
+  - Recipes are automatically scaled, including ingredient quantities and nutrition values, based on selected servings.
 - **Next Recipe Navigation**: Seamlessly navigate to the next recipe using a button.
 - **Accessibility**: Includes alt text for images, semantic HTML, and keyboard navigation.
+
+Adjustable Servings:
+Users can select the number of servings for each recipe using a dropdown.
+Recipes are automatically scaled, including ingredient quantities and nutrition values, based on selected servings.
 
 ---
 
@@ -83,6 +90,9 @@ Check out the live demo: [\[Demo\]](https://recipe-page-react-tailwind-delfin.ve
 - **Default Recipe**: The default recipe is **omelette** and can be accessed at `/recipes/omelette`.
 - **Dynamic Recipes**: Access other recipes via custom URLs like `/recipes/pancakes`.
 - **Next Recipe Button**: Use the button to navigate to the next recipe.
+- **Adjustable Servings**:
+  - Select the number of servings from the dropdown to automatically adjust ingredient and nutrition values.
+  - The dropdown options are defined by the scalableServings array in the recipe data.
 
 ### Matomo Tracking
 
@@ -96,24 +106,24 @@ To use Matomo:
 
 ---
 
-## Folder Structure
+##
 
 ```plaintext
-  src/
-  ├── components/
-  │ ├── Footer.jsx
-  │ ├── Instructions.jsx
-  │ ├── Nutrition.jsx
-  │ ├── RecipeCard.jsx
-  │ ├── RecipeImage.jsx
-  │ ├── RecipeTitle.jsx
-  │ └── TimeInfo.jsx
-  ├── data/
-  │ └── recipes.json
-  ├── App.js
-  ├── index.js
-  └── styles/
-  └── app.css
+src/
+├── components/
+│   ├── Footer.jsx
+│   ├── Instructions.jsx
+│   ├── Nutrition.jsx
+│   ├── RecipeCard.jsx
+│   ├── RecipeImage.jsx
+│   ├── RecipeTitle.jsx
+│   ├── TimeInfo.jsx
+│   ├── Ingredients.jsx
+├── data/
+│   └── recipes.json
+├── utils/
+│   ├── scaleRecipe.js
+│   └── Matomo.jsx
 ```
 
 - components/: Contains reusable React components for different sections of the page.
@@ -129,45 +139,60 @@ Here’s an example of the JSON data used for recipes:
 ```
 [
   {
-  "code": "omelette",
-  "title": "Simple Omelette Recipe",
-  "image": "/images/image-omelette.jpeg",
-  "description": "An easy and quick dish, perfect for any meal.",
-  "preparationTime": {
-  "total": "10 minutes",
-  "preparation": "5 minutes",
-  "cooking": "5 minutes"
-  },
-  "ingredients": [
-    "2-3 large eggs",
-    "Salt, to taste",
-    "Pepper, to taste",
-    "1 tablespoon of butter or oil"
-  ],
-  "instructions":
-    [
+    "code": "omelette",
+    "title": "Simple Omelette Recipe",
+    "image": "/images/image-omelette.jpeg",
+    "description": "An easy and quick dish, perfect for any meal.",
+    "servings": 1,
+    "scalableServings": [1, 2, 4, 6, 10],
+    "preparationTime": {
+      "total": "Approximately 10 minutes",
+      "preparation": "5 minutes",
+      "cooking": "5 minutes"
+    },
+    "ingredients": [
       {
-      "step": 1,
-      "description": "Beat the eggs with salt and pepper."
+        "quantity": 2,
+        "unit": "large",
+        "name": "eggs"
       },
       {
-      "step": 2,
-      "description": "Heat a non-stick pan and add butter."
+        "quantity": null,
+        "unit": "",
+        "name": "salt",
+        "note": "to taste"
+      },
+      {
+        "quantity": 1,
+        "unit": "tablespoon",
+        "name": "butter or oil"
       }
     ],
-  "nutrition":
-    [
+    "instructions": [
       {
-      "nutrient": "calories",
-      "value": "277kcal"
+        "step": 1,
+        "description": "Beat the eggs with salt and pepper until well mixed."
       },
       {
-      "nutrient": "protein",
-      "value": "20g"
+        "step": 2,
+        "description": "Heat a non-stick frying pan and add butter or oil."
+      }
+    ],
+    "nutrition": [
+      {
+        "nutrient": "calories",
+        "quantity": 277,
+        "unit": "kcal"
+      },
+      {
+        "nutrient": "protein",
+        "quantity": 20,
+        "unit": "g"
       }
     ]
   }
 ]
+
 ```
 
 ---
