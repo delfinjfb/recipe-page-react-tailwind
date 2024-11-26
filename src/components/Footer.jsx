@@ -8,16 +8,29 @@ export default function Footer() {
 				href="https://www.frontendmentor.io/?ref=challenge"
 				target="_blank"
 				rel="noopener noreferrer"
-				className="text-rose-800 hover:underline"
+				className="text-yellow-400 hover:underline ml-2"
 			>
 				Frontend Mentor
 			</a>
-			. Coded by
+			<span className="px-4">|</span>
 			<a
-				href="https://github.com/delfinjfb"
+				href="https://recipe-page-react-tailwind-git-improvements-delfins-projects.vercel.app/"
 				target="_blank"
 				rel="noopener noreferrer"
-				className="text-rose-800 hover:underline"
+				className="text-yellow-400 hover:underline"
+			>
+				See an improved version
+				<span className="ml-1" aria-label="opens in a new tab">
+					🔗
+				</span>
+			</a>
+			<br />
+			Coded by
+			<a
+				href="https://recipe-page-react-tailwind-git-improvements-delfins-projects.vercel.app/"
+				target="_blank"
+				rel="noopener noreferrer"
+				className="text-yellow-400 hover:underline ml-2"
 			>
 				Delfin Fernandez
 			</a>
