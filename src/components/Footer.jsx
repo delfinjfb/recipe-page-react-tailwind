@@ -1,6 +1,7 @@
 // app/components/Footer.tsx
 
 export default function Footer() {
+	const codedByUrl = process.env.NEXT_PUBLIC_LINK_CODED_DELFIN;
 	return (
 		<footer className="text-center text-sm text-white py-4 bg-black">
 			Challenge by
@@ -12,7 +13,7 @@ export default function Footer() {
 			>
 				Frontend Mentor
 			</a>
-			<span className="px-4">|</span>
+			{/* <span className="px-4">|</span>
 			<a
 				href="https://recipe-page-react-tailwind-git-improvements-delfins-projects.vercel.app/"
 				target="_blank"
@@ -23,11 +24,11 @@ export default function Footer() {
 				<span className="ml-1" aria-label="opens in a new tab">
 					🔗
 				</span>
-			</a>
+			</a> */}
 			<br />
 			Coded by
 			<a
-				href="https://recipe-page-react-tailwind-git-improvements-delfins-projects.vercel.app/"
+				href={codedByUrl}
 				target="_blank"
 				rel="noopener noreferrer"
 				className="text-yellow-400 hover:underline ml-2"
