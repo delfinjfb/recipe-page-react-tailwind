@@ -247,5 +247,73 @@
 			"Adjust salt and spices: Check salt at each step to balance the flavors."
 		],
 		"utensils": ["Knives", "Large pot", "Wooden spoon"]
-	}
+	},
+	{
+    "code": "flan_auyama",
+    "title": "Pumpkin Flan / Quesillo de Auyama",
+    "image": "/images/image-flan-auyama.jpeg",
+    "description": "A delicious pumpkin flan with a caramelized topping, perfect for dessert. Made with pumpkin, eggs, sugar, condensed milk, and a hint of rum.",
+    "preparationTime": {
+        "total": "Approximately 2 hours",
+        "preparation": "30 minutes",
+        "cooking": "1 hour 30 minutes"
+    },
+    "servings": 40,
+    "scalableServings": [1, 4, 10, 20, 30, 40],
+    "ingredients": [
+        { "quantity": 3, "unit": "kg", "name": "pumpkin" },
+        { "quantity": 20, "unit": "units", "name": "eggs" },
+        { "quantity": 600, "unit": "g", "name": "sugar" },
+        { "quantity": 3, "unit": "cans", "name": "sweetened condensed milk" },
+        { "quantity": 1, "unit": "dl", "name": "golden rum" },
+        { "quantity": null, "unit": "", "name": "agricultural rum" }
+    ],
+    "caramel": [
+        { "quantity": 3, "unit": "dl", "ingredient": "water" },
+        { "quantity": 900, "unit": "g", "name": "sugar" },
+        { "quantity": null, "unit": "", "name": "grated lemon peel" }
+    ],
+    "utensils": [
+        { "quantity": 1, "unit": "", "utensil": "large pot" },
+        { "quantity": 1, "unit": "", "utensil": "metal bowl" },
+        { "quantity": 40, "unit": "", "utensil": "individual flan molds" },
+        { "quantity": 1, "unit": "", "utensil": "blender" },
+        { "quantity": 1, "unit": "", "utensil": "steel saucepan" }
+    ],
+    "instructions": [
+        {
+            "step": "A",
+            "title": "Caramel Preparation [15 minutes]",
+            "description": [
+                "1. Put the sugar in the steel saucepan.",
+                "2. Over medium heat, gently stir with a metal spoon.",
+                "3. When the sugar is melted, transparent, and brown, gradually mix in 3 dl of water without reducing the temperature.",
+                "4. Coat the flan molds with the caramel."
+            ]
+        },
+        {
+            "step": "B",
+            "title": "Flan Mixture Preparation [1 hour 30 minutes]",
+            "description": [
+                "1. Peel, wash, and cut the pumpkins into pieces.",
+                "2. Boil the pumpkin pieces for 20 minutes.",
+                "3. Blend the pumpkin with the sweetened condensed milk, whole eggs, grated lemon peel, sugar, and golden rum.",
+                "4. Fill the molds with the mixture.",
+                "5. Bake, covered, in a water bath for 50 minutes at 250ºC.",
+                "6. Let cool and store in the fridge.",
+                "7. Serve unmolded on a dessert plate."
+            ]
+        }
+    ],
+    "nutrition": [
+        { "nutrient": "calories", "quantity": 250, "unit": "kcal" },
+        { "nutrient": "carbs", "quantity": 40, "unit": "g" },
+        { "nutrient": "protein", "quantity": 7, "unit": "g" },
+        { "nutrient": "fat", "quantity": 8, "unit": "g" }
+    ],
+    "tips": [
+        "Adjust the amount of sugar to taste for a less sweet caramel.",
+        "Ensure that the water bath is at the right temperature for an evenly cooked flan."
+    ]
+}
 ]
