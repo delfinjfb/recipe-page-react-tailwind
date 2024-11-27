@@ -1,187 +1,251 @@
 [
-  {
-    "code": "omelette",
-    "title": "Simple Omelette Recipe",
-    "image": "/images/image-omelette.jpeg",
-    "description": "An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to perfection, optionally filled with your choice of cheese, vegetables, or meats.",
-    "servings": 1,
-    "scalableServings": [1, 2, 4, 6, 10],
-    "preparationTime": {
-      "total": "Approximately 10 minutes",
-      "preparation": "5 minutes",
-      "cooking": "5 minutes"
-    },
-    "ingredients": [
-      {
-        "quantity": 2,
-        "unit": "large",
-        "name": "eggs"
-      },
-      {
-        "quantity": null,
-        "unit": "",
-        "name": "salt",
-        "note": "to taste"
-      },
-      {
-        "quantity": null,
-        "unit": "",
-        "name": "pepper",
-        "note": "to taste"
-      },
-      {
-        "quantity": 1,
-        "unit": "tablespoon",
-        "name": "butter or oil"
-      },
-      {
-        "quantity": null,
-        "unit": "",
-        "name": "Optional fillings",
-        "note": "cheese, diced vegetables, cooked meats, herbs"
-      }
-    ],
-    "instructions": [
-      {
-        "step": 1,
-        "description": "Beat the eggs: In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. You can add a tablespoon of water or milk for a fluffier texture."
-      },
-      {
-        "step": 2,
-        "description": "Heat the pan: Place a non-stick frying pan over medium heat and add butter or oil."
-      },
-      {
-        "step": 3,
-        "description": "Cook the omelette: Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure the eggs evenly coat the surface."
-      },
-      {
-        "step": 4,
-        "description": "Add fillings (optional): When the eggs begin to set at the edges but are still slightly runny in the middle, sprinkle your chosen fillings over one half of the omelette."
-      },
-      {
-        "step": 5,
-        "description": "Fold and serve: As the omelette continues to cook, carefully lift one edge and fold it over the fillings. Let it cook for another minute, then slide it onto a plate."
-      },
-      {
-        "step": 6,
-        "description": "Enjoy: Serve hot, with additional salt and pepper if needed."
-      }
-    ],
-    "nutrition": [
-      {
-        "nutrient": "calories",
-        "quantity": 277,
-        "unit": "kcal"
-      },
-      {
-        "nutrient": "carbs",
-        "quantity": 0,
-        "unit": "g"
-      },
-      {
-        "nutrient": "protein",
-        "quantity": 20,
-        "unit": "g"
-      },
-      {
-        "nutrient": "fat",
-        "quantity": 22,
-        "unit": "g"
-      }
-    ]
-  },
-  {
-    "code": "pancakes",
-    "title": "Classic Pancake Recipe",
-    "image": "/images/image-pancakes.jpeg",
-    "description": "Fluffy and delicious pancakes, perfect for breakfast or brunch. Top with syrup, fruit, or your favorite toppings.",
-    "servings": 1,
-    "scalableServings": [1, 2, 4, 6, 10],
-    "preparationTime": {
-      "total": "Approximately 20 minutes",
-      "preparation": "10 minutes",
-      "cooking": "10 minutes"
-    },
-    "ingredients": [
-      {
-        "quantity": 1,
-        "unit": "cup",
-        "name": "all-purpose flour"
-      },
-      {
-        "quantity": 2,
-        "unit": "tablespoons",
-        "name": "sugar"
-      },
-      {
-        "quantity": 2,
-        "unit": "teaspoons",
-        "name": "baking powder"
-      },
-      {
-        "quantity": 0.5,
-        "unit": "teaspoon",
-        "name": "salt"
-      },
-      {
-        "quantity": 1,
-        "unit": "cup",
-        "name": "milk"
-      },
-      {
-        "quantity": 1,
-        "unit": "large",
-        "name": "egg"
-      },
-      {
-        "quantity": 2,
-        "unit": "tablespoons",
-        "name": "melted butter or oil"
-      }
-    ],
-    "instructions": [
-      {
-        "step": 1,
-        "description": "Mix dry ingredients: In a large bowl, whisk together the flour, sugar, baking powder, and salt."
-      },
-      {
-        "step": 2,
-        "description": "Combine wet ingredients: In a separate bowl, whisk together the milk, egg, and melted butter."
-      },
-      {
-        "step": 3,
-        "description": "Make the batter: Pour the wet ingredients into the dry ingredients and gently mix until combined. Do not overmix; lumps are fine."
-      },
-      {
-        "step": 4,
-        "description": "Cook the pancakes: Heat a non-stick skillet or griddle over medium heat. Grease lightly with butter or oil. Pour 1/4 cup of batter for each pancake."
-      },
-      {
-        "step": 5,
-        "description": "Flip and serve: When bubbles form on the surface and the edges look set, flip the pancakes. Cook until golden on both sides. Serve warm with your favorite toppings."
-      }
-    ],
-    "nutrition": [
-      {
-        "nutrient": "calories",
-        "quantity": 195,
-        "unit": "kcal"
-      },
-      {
-        "nutrient": "carbs",
-        "quantity": 26,
-        "unit": "g"
-      },
-      {
-        "nutrient": "protein",
-        "quantity": 5,
-        "unit": "g"
-      },
-      {
-        "nutrient": "fat",
-        "quantity": 7,
-        "unit": "g"
-      }
-    ]
-  }
+	{
+		"code": "omelette",
+		"title": "Simple Omelette Recipe",
+		"image": "/images/image-omelette.jpeg",
+		"description": "An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to perfection, optionally filled with your choice of cheese, vegetables, or meats.",
+		"servings": 1,
+		"scalableServings": [1, 2, 4, 6, 10],
+		"preparationTime": {
+			"total": "Approximately 10 minutes",
+			"preparation": "5 minutes",
+			"cooking": "5 minutes"
+		},
+		"ingredients": [
+			{
+				"quantity": 2,
+				"unit": "large",
+				"name": "eggs"
+			},
+			{
+				"quantity": null,
+				"unit": "",
+				"name": "salt",
+				"note": "to taste"
+			},
+			{
+				"quantity": null,
+				"unit": "",
+				"name": "pepper",
+				"note": "to taste"
+			},
+			{
+				"quantity": 1,
+				"unit": "tablespoon",
+				"name": "butter or oil"
+			},
+			{
+				"quantity": null,
+				"unit": "",
+				"name": "Optional fillings",
+				"note": "cheese, diced vegetables, cooked meats, herbs"
+			}
+		],
+		"instructions": [
+			{
+				"step": 1,
+				"description": "Beat the eggs: In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. You can add a tablespoon of water or milk for a fluffier texture."
+			},
+			{
+				"step": 2,
+				"description": "Heat the pan: Place a non-stick frying pan over medium heat and add butter or oil."
+			},
+			{
+				"step": 3,
+				"description": "Cook the omelette: Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure the eggs evenly coat the surface."
+			},
+			{
+				"step": 4,
+				"description": "Add fillings (optional): When the eggs begin to set at the edges but are still slightly runny in the middle, sprinkle your chosen fillings over one half of the omelette."
+			},
+			{
+				"step": 5,
+				"description": "Fold and serve: As the omelette continues to cook, carefully lift one edge and fold it over the fillings. Let it cook for another minute, then slide it onto a plate."
+			},
+			{
+				"step": 6,
+				"description": "Enjoy: Serve hot, with additional salt and pepper if needed."
+			}
+		],
+		"nutrition": [
+			{
+				"nutrient": "calories",
+				"quantity": 277,
+				"unit": "kcal"
+			},
+			{
+				"nutrient": "carbs",
+				"quantity": 0,
+				"unit": "g"
+			},
+			{
+				"nutrient": "protein",
+				"quantity": 20,
+				"unit": "g"
+			},
+			{
+				"nutrient": "fat",
+				"quantity": 22,
+				"unit": "g"
+			}
+		]
+	},
+	{
+		"code": "pancakes",
+		"title": "Classic Pancake Recipe",
+		"image": "/images/image-pancakes.jpeg",
+		"description": "Fluffy and delicious pancakes, perfect for breakfast or brunch. Top with syrup, fruit, or your favorite toppings.",
+		"servings": 1,
+		"scalableServings": [1, 2, 4, 6, 10],
+		"preparationTime": {
+			"total": "Approximately 20 minutes",
+			"preparation": "10 minutes",
+			"cooking": "10 minutes"
+		},
+		"ingredients": [
+			{
+				"quantity": 1,
+				"unit": "cup",
+				"name": "all-purpose flour"
+			},
+			{"quantity": 115, "unit": "ml", "name": "olive oil"},
+			{
+				"quantity": 2,
+				"unit": "tablespoons",
+				"name": "sugar"
+			},
+			{
+				"quantity": 2,
+				"unit": "teaspoons",
+				"name": "baking powder"
+			},
+			{
+				"quantity": 0.5,
+				"unit": "teaspoon",
+				"name": "salt"
+			},
+			{
+				"quantity": 1,
+				"unit": "cup",
+				"name": "milk"
+			},
+			{
+				"quantity": 1,
+				"unit": "large",
+				"name": "egg"
+			},
+			{
+				"quantity": 2,
+				"unit": "tablespoons",
+				"name": "melted butter or oil"
+			}
+		],
+		"instructions": [
+			{
+				"step": 1,
+				"description": "Mix dry ingredients: In a large bowl, whisk together the flour, sugar, baking powder, and salt."
+			},
+			{
+				"step": 2,
+				"description": "Combine wet ingredients: In a separate bowl, whisk together the milk, egg, and melted butter."
+			},
+			{
+				"step": 3,
+				"description": "Make the batter: Pour the wet ingredients into the dry ingredients and gently mix until combined. Do not overmix; lumps are fine."
+			},
+			{
+				"step": 4,
+				"description": "Cook the pancakes: Heat a non-stick skillet or griddle over medium heat. Grease lightly with butter or oil. Pour 1/4 cup of batter for each pancake."
+			},
+			{
+				"step": 5,
+				"description": "Flip and serve: When bubbles form on the surface and the edges look set, flip the pancakes. Cook until golden on both sides. Serve warm with your favorite toppings."
+			}
+		],
+		"nutrition": [
+			{
+				"nutrient": "calories",
+				"quantity": 195,
+				"unit": "kcal"
+			},
+			{
+				"nutrient": "carbs",
+				"quantity": 26,
+				"unit": "g"
+			},
+			{
+				"nutrient": "protein",
+				"quantity": 5,
+				"unit": "g"
+			},
+			{
+				"nutrient": "fat",
+				"quantity": 7,
+				"unit": "g"
+			}
+		]
+	},
+	{
+		"code": "sancocho",
+		"title": "Sancocho / Venezuelan Soup",
+		"image": "/images/image-sancocho.jpeg",
+		"description": "A traditional Venezuelan soup, perfect for gatherings. Made with a variety of meats, vegetables, and aromatic herbs.",
+		"preparationTime": {
+			"total": "Approximately 2 hours 30 minutes",
+			"preparation": "15 minutes",
+			"cooking": "2 hours 15 minutes"
+		},
+		"servings": 30,
+		"scalableServings": [4, 6, 10, 15, 30],
+		"ingredients": [
+			{"quantity": 115, "unit": "ml", "name": "olive oil"},
+			{"quantity": 7.5, "unit": "units", "name": "onions"},
+			{"quantity": 11.25, "unit": "cloves", "name": "garlic"},
+			{"quantity": 3.75, "unit": "stalks", "name": "celery"},
+			{"quantity": 3.75, "unit": "units", "name": "small leeks"},
+			{"quantity": 650, "unit": "g", "name": "cabbage"},
+			{"quantity": 7.5, "unit": "units", "name": "sweet peppers"},
+			{"quantity": 375, "unit": "g", "name": "chicken thighs"},
+			{"quantity": 375, "unit": "g", "name": "beef"},
+			{"quantity": 11.25, "unit": "liters", "name": "water"},
+			{"quantity": 3.75, "unit": "units", "name": "corn cobs"},
+			{"quantity": 750, "unit": "g", "name": "carrots"},
+			{"quantity": 1300, "unit": "g", "name": "potatoes"},
+			{"quantity": 1200, "unit": "g", "name": "sweet potatoes"},
+			{"quantity": 1500, "unit": "g", "name": "pumpkin"},
+			{"quantity": 1, "unit": "unit", "name": "fresh coriander"}
+		],
+		"instructions": [
+			{
+				"step": 1,
+				"description": "Prepare the stew [15 min]: Start the Venezuelan sancocho by heating 30 ml of extra virgin olive oil in a large pot. While the oil heats up, brown the onions, garlic cloves, celery stalk, leeks, cabbage, and sweet peppers. Add all chopped ingredients to the pot, season with salt and pepper, and sauté over low heat for about 10 minutes."
+			},
+			{
+				"step": 2,
+				"description": "Add the meat and cook on low heat [1 hour]: Once the onion starts to turn translucent, add the chicken thighs and the beef cut into cubes, previously seasoned with salt and pepper. Once the meat is browned, cover with liters of water and cook on low heat for 1 hour until the meat becomes tender."
+			},
+			{
+				"step": 3,
+				"description": "Add root vegetables [30 min]: After this time, cut the corn cobs into 2 cm pieces. Peel and dice the carrots, medium potatoes, and sweet potatoes. Adjust the salt and cook everything over low heat for another 30 minutes."
+			},
+			{
+				"step": 4,
+				"description": "Add the pumpkin [15 min]: Peel and cut the pumpkin into small cubes. Add them to the pot and let it cook for another 15 minutes. Turn off the heat."
+			},
+			{
+				"step": 5,
+				"description": "Add fresh coriander before serving [5 min]: Add fresh coriander before serving."
+			}
+		],
+		"nutrition": [
+			{"nutrient": "calories", "quantity": 150, "unit": "kcal"},
+			{"nutrient": "carbs", "quantity": 25, "unit": "g"},
+			{"nutrient": "protein", "quantity": 10, "unit": "g"},
+			{"nutrient": "fat", "quantity": 5, "unit": "g"}
+		],
+		"tips": [
+			"Adjust salt and spices: Check salt at each step to balance the flavors."
+		],
+		"utensils": ["Knives", "Large pot", "Wooden spoon"]
+	}
 ]
