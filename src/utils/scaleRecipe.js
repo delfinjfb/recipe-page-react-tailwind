@@ -7,37 +7,40 @@
  * @returns {Object} - The recipe with scaled ingredient and nutrition quantities.
  */
 export function scaleRecipe(recipe, desiredServings) {
-  if (!recipe || !desiredServings) return recipe;
+	if (!recipe || !desiredServings) return recipe;
 
-  const scaleFactor = desiredServings / recipe.servings;
+	const scaleFactor = desiredServings / recipe.servings;
+	console.log("desiredServings: " + desiredServings);
+	console.log("recipe.servings: " + recipe.servings);
+	console.log("scaleFactor: " + scaleFactor);
 
-  // Create a deep copy of the recipe to avoid mutating the original
-  const scaledRecipe = JSON.parse(JSON.stringify(recipe));
+	// Create a deep copy of the recipe to avoid mutating the original
+	const scaledRecipe = JSON.parse(JSON.stringify(recipe));
 
-  // Update servings in scaled recipe
-  scaledRecipe.servings = desiredServings;
+	// Update servings in scaled recipe
+	scaledRecipe.servings = desiredServings;
 
-  // Scale each ingredient's quantity
-  scaledRecipe.ingredients = recipe.ingredients.map((ingredient) => {
-    if (typeof ingredient.quantity === "number") {
-      return {
-        ...ingredient,
-        quantity: ingredient.quantity * scaleFactor,
-      };
-    }
-    return ingredient; // Return unchanged if quantity is "to taste"
-  });
+	// Scale each ingredient's quantity
+	scaledRecipe.ingredients = recipe.ingredients.map(ingredient => {
+		if (typeof ingredient.quantity === "number") {
+			return {
+				...ingredient,
+				quantity: Math.round(ingredient.quantity * scaleFactor * 10) / 10
+			};
+		}
+		return ingredient; // Return unchanged if quantity is "to taste"
+	});
 
-  // Scale nutrition quantities
-  scaledRecipe.nutrition = recipe.nutrition.map((nutrient) => {
-    if (typeof nutrient.quantity === "number") {
-      return {
-        ...nutrient,
-        quantity: nutrient.quantity * scaleFactor,
-      };
-    }
-    return nutrient; // Return unchanged if it's not numeric
-  });
+	// Scale nutrition quantities
+	scaledRecipe.nutrition = recipe.nutrition.map(nutrient => {
+		if (typeof nutrient.quantity === "number") {
+			return {
+				...nutrient,
+				quantity: nutrient.quantity * scaleFactor
+			};
+		}
+		return nutrient; // Return unchanged if it's not numeric
+	});
 
-  return scaledRecipe;
+	return scaledRecipe;
 }
