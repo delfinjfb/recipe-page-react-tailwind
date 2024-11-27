@@ -1,7 +1,8 @@
 // app/components/Footer.tsx
 
 export default function Footer() {
-	const codedByUrl = process.env.NEXT_PUBLIC_LINK_CODED_DELFIN;
+	const codedByUrl = process.env.REACT_APP_LINK_CODED_DELFIN;
+
 	return (
 		<footer className="text-center text-sm text-white py-4 bg-black">
 			Challenge by
