@@ -36,7 +36,7 @@ export function scaleRecipe(recipe, desiredServings) {
 		if (typeof nutrient.quantity === "number") {
 			return {
 				...nutrient,
-				quantity: nutrient.quantity * scaleFactor
+				quantity: Math.round(nutrient.quantity * scaleFactor * 10) / 10
 			};
 		}
 		return nutrient; // Return unchanged if it's not numeric
