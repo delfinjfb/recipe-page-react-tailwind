@@ -24,6 +24,9 @@ Check out the live demo: [\[Demo\]](https://recipe-page-react-tailwind-delfin.ve
 
 ![Recipe Page Screenshot](https://recipe-page-react-tailwind-delfin.vercel.app/images/ReactRecipePageTailwind.png)
 
+
+See the [improved version](https://recipe-page-react-tailwind-git-improvements-delfins-projects.vercel.app/) for additional enhancements and new functionalities.
+
 ---
 
 ## Features
@@ -41,9 +44,12 @@ Check out the live demo: [\[Demo\]](https://recipe-page-react-tailwind-delfin.ve
 - **Next Recipe Navigation**: Seamlessly navigate to the next recipe using a button.
 - **Accessibility**: Includes alt text for images, semantic HTML, and keyboard navigation.
 
-Adjustable Servings:
-Users can select the number of servings for each recipe using a dropdown.
-Recipes are automatically scaled, including ingredient quantities and nutrition values, based on selected servings.
+- **Adjustable Servings**:
+  -Users can select the number of servings for each recipe using a dropdown.
+  -Recipes are automatically scaled, including ingredient quantities and nutrition values, based on selected servings.
+
+- **Recipe Grid Page**: Users can now see a grid layout of all available recipes from `recipes.json`. This is available on the `/recipes/` route.
+- **Improved Navigation**: The application provides easy navigation between recipes from the main grid.
 
 ---
 
@@ -93,6 +99,8 @@ Recipes are automatically scaled, including ingredient quantities and nutrition 
 - **Adjustable Servings**:
   - Select the number of servings from the dropdown to automatically adjust ingredient and nutrition values.
   - The dropdown options are defined by the scalableServings array in the recipe data.
+- **Home Page**: The application now has a home page accessible via `/recipes/` which displays a grid of all available recipes. Each recipe is clickable, taking you to a detailed view of the selected recipe.
+- **Recipe Page**: The dynamic route `/recipes/:recipeCode` still functions to display a single recipe page.
 
 ### Matomo Tracking
 
@@ -119,8 +127,13 @@ src/
 │   ├── RecipeTitle.jsx
 │   ├── TimeInfo.jsx
 │   ├── Ingredients.jsx
+│   ├── RecipeGrid.jsx
 ├── data/
 │   └── recipes.json
+├── pages/
+│   └── Home.jsx
+├── routes/
+│   └── AppRoutes.jsx
 ├── utils/
 │   ├── scaleRecipe.js
 │   └── Matomo.jsx
