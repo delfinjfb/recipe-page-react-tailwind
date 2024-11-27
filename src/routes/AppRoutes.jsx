@@ -1,6 +1,7 @@
 import React from "react";
 import {Routes, Route, Navigate} from "react-router-dom";
 import RecipeCard from "../components/RecipeCard";
+import Home from "../pages/Home.jsx";
 import recipesData from "../data/recipes.json";
 
 const AppRoutes = () => {
@@ -15,12 +16,10 @@ const AppRoutes = () => {
 
 	return (
 		<Routes>
-			<Route path="/" element={<Navigate to="/recipes/omelette" replace />} />
+			<Route path="/" element={<Navigate to="/recipes/" replace />} />
 
-			<Route
-				path="/recipes"
-				element={<Navigate to="/recipes/omelette" replace />}
-			/>
+			{/* Home Page with All Recipes Grid */}
+			<Route path="/recipes/" element={<Home />} />
 
 			<Route
 				path="/recipes/:recipeCode"
