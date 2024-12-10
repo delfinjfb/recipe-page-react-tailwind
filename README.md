@@ -4,7 +4,7 @@ This is a responsive recipe page built with **React** and styled using **Tailwin
 
 ---
 
-## Table of Contents *
+## Table of Contents \*\*\*
 
 - [Demo](#demo)
 - [Features](#features)
