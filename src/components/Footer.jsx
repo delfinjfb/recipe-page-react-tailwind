@@ -14,7 +14,7 @@ export default function Footer() {
 			</a>
 			<span className="px-4">|</span>
 			<a
-				href="https://recipe-page-react-tailwind-git-improvements-delfins-projects.vercel.app/"
+				href="https://recipe-page-react-tailwind-git-improvements-delfins-projects.vercel.app/recipes/"
 				target="_blank"
 				rel="noopener noreferrer"
 				className="text-yellow-400 hover:underline"
