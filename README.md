@@ -12,7 +12,9 @@ This is a responsive recipe page built with **React** and styled using **Tailwin
 - [Setup](#setup)
 - [Usage](#usage)
 - [Folder Structure](#folder-structure)
+- [JSON Structure](#json-structure)
 - [License](#license)
+- [Changes Added](#changes)
 
 ---
 
@@ -27,18 +29,24 @@ Check out the live demo: [\[Demo\]](https://recipe-page-react-tailwind-delfin.ve
 ## Features
 
 - **Responsive Design**: Optimized for mobile and desktop (375px to 1440px widths).
-- **Dynamic Recipes**: Recipes are fetched from a JSON file.
-- **Navigation**: Smooth scrolling when navigating to the next recipe.
-- **Accessibility**: Includes skip links, proper semantic HTML, and ARIA roles.
-- **Styling**: Consistent design using Tailwind CSS.
+- **Dynamic Recipes**: Recipes are loaded dynamically from a JSON file.
+- **Custom Recipe URLs**: Recipes are accessed through unique URLs, such as `/recipes/omelette`.
+- **Matomo Tracking**: Tracks user interactions and navigation for analytics.
+- **Routing with Redirects**:
+  - Root (`/`) and `/recipes/` paths redirect to the default recipe (`omelette`).
+  - Dynamic routes like `/recipes/:recipeCode` display specific recipes.
+- **Next Recipe Navigation**: Seamlessly navigate to the next recipe using a button.
+- **Accessibility**: Includes alt text for images, semantic HTML, and keyboard navigation.
 
 ---
 
 ## Technologies Used
 
 - **React**: A JavaScript library for building user interfaces.
-- **Tailwind CSS**: A utility-first CSS framework.
-- **PropTypes**: For prop validation.
+- **React Router**: For managing dynamic routing and custom URLs.
+- **Tailwind CSS**: A utility-first CSS framework for styling.
+- **Matomo Analytics**: For tracking user interactions.
+- **PropTypes**: For validating props.
 - **JSON**: Static data for recipes.
 
 ---
@@ -70,12 +78,21 @@ Check out the live demo: [\[Demo\]](https://recipe-page-react-tailwind-delfin.ve
 
 ## Usage
 
-- Click the "Next Recipe" button to view the next recipe.
-- Recipes are displayed with:
-  - A title and description.
-  - Ingredients and instructions.
-  - Nutrition facts in a tabular format.
-  - An image of the recipe.
+### Navigating Recipes
+
+- **Default Recipe**: The default recipe is **omelette** and can be accessed at `/recipes/omelette`.
+- **Dynamic Recipes**: Access other recipes via custom URLs like `/recipes/pancakes`.
+- **Next Recipe Button**: Use the button to navigate to the next recipe.
+
+### Matomo Tracking
+
+- **Tracking Features**:
+  - Tracks page views for each recipe URL.
+  - Logs user interactions for analytics purposes.
+
+To use Matomo:
+
+- Update the `Matomo.jsx` file with your Matomo tracking server and site ID.
 
 ---
 
@@ -167,3 +184,22 @@ Challenge by Frontend Mentor.
 Coded by Delfin Fernandez.
 
 _Image of pancake by [Real Simple](<https://www.realsimple.com/thmb/u0FflZ0sazXanhitWueM3LaXkaw=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/how-to-make-pancakes-step-by-step-bf45f02d4b3c4392bddf92e05c9e17eb.jpg>), licensed under [Creative Commons](https://creativecommons.org/licenses/)._
+
+## Changes
+
+### Changes Added:
+
+1. **Matomo Tracking**:
+
+   - Highlighted its features in the "Features" and "Usage" sections.
+   - Added instructions for setting up Matomo in the "Usage" section.
+
+2. **Routing with Redirects**:
+
+   - Mentioned default redirects in the "Features" section.
+   - Explained how recipes are accessed via custom URLs in the "Usage" section.
+
+3. **Updated Folder Structure**:
+   - Included the `utils/Matomo.jsx` file.
+
+---
