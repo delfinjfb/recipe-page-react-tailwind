@@ -2,9 +2,8 @@
 
 export default function Footer() {
 	const codedByUrl = process.env.REACT_APP_LINK_CODED_DELFIN;
-	console.log("codedByUrl: " + codedByUrl);
 	const impprovedUrl = process.env.REACT_APP_LINK_RECIPE_IMPROVED;
-	console.log("Improved URL: " + impprovedUrl);
+
 	return (
 		<footer className="text-center text-sm text-white py-4 bg-black">
 			Challenge by
