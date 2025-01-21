@@ -1,5 +1,5 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 
 const Ingredients = ({ingredients}) => (
 	<div className="my-4 border-t-2 pt-4">
