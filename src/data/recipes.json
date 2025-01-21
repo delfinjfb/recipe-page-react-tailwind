@@ -4,17 +4,42 @@
     "title": "Simple Omelette Recipe",
     "image": "/images/image-omelette.jpeg",
     "description": "An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to perfection, optionally filled with your choice of cheese, vegetables, or meats.",
+    "servings": 1,
+    "scalableServings": [1, 2, 4, 6, 10],
     "preparationTime": {
       "total": "Approximately 10 minutes",
       "preparation": "5 minutes",
       "cooking": "5 minutes"
     },
     "ingredients": [
-      "2-3 large eggs",
-      "Salt, to taste",
-      "Pepper, to taste",
-      "1 tablespoon of butter or oil",
-      "Optional fillings: cheese, diced vegetables, cooked meats, herbs"
+      {
+        "quantity": 2,
+        "unit": "large",
+        "name": "eggs"
+      },
+      {
+        "quantity": null,
+        "unit": "",
+        "name": "salt",
+        "note": "to taste"
+      },
+      {
+        "quantity": null,
+        "unit": "",
+        "name": "pepper",
+        "note": "to taste"
+      },
+      {
+        "quantity": 1,
+        "unit": "tablespoon",
+        "name": "butter or oil"
+      },
+      {
+        "quantity": null,
+        "unit": "",
+        "name": "Optional fillings",
+        "note": "cheese, diced vegetables, cooked meats, herbs"
+      }
     ],
     "instructions": [
       {
@@ -45,19 +70,23 @@
     "nutrition": [
       {
         "nutrient": "calories",
-        "value": "277 kcal"
+        "quantity": 277,
+        "unit": "kcal"
       },
       {
         "nutrient": "carbs",
-        "value": "0g"
+        "quantity": 0,
+        "unit": "g"
       },
       {
         "nutrient": "protein",
-        "value": "20g"
+        "quantity": 20,
+        "unit": "g"
       },
       {
         "nutrient": "fat",
-        "value": "22g"
+        "quantity": 22,
+        "unit": "g"
       }
     ]
   },
@@ -66,19 +95,49 @@
     "title": "Classic Pancake Recipe",
     "image": "/images/image-pancakes.jpeg",
     "description": "Fluffy and delicious pancakes, perfect for breakfast or brunch. Top with syrup, fruit, or your favorite toppings.",
+    "servings": 1,
+    "scalableServings": [1, 2, 4, 6, 10],
     "preparationTime": {
       "total": "Approximately 20 minutes",
       "preparation": "10 minutes",
       "cooking": "10 minutes"
     },
     "ingredients": [
-      "1 cup all-purpose flour",
-      "2 tablespoons sugar",
-      "2 teaspoons baking powder",
-      "1/2 teaspoon salt",
-      "1 cup milk",
-      "1 large egg",
-      "2 tablespoons melted butter or oil"
+      {
+        "quantity": 1,
+        "unit": "cup",
+        "name": "all-purpose flour"
+      },
+      {
+        "quantity": 2,
+        "unit": "tablespoons",
+        "name": "sugar"
+      },
+      {
+        "quantity": 2,
+        "unit": "teaspoons",
+        "name": "baking powder"
+      },
+      {
+        "quantity": 0.5,
+        "unit": "teaspoon",
+        "name": "salt"
+      },
+      {
+        "quantity": 1,
+        "unit": "cup",
+        "name": "milk"
+      },
+      {
+        "quantity": 1,
+        "unit": "large",
+        "name": "egg"
+      },
+      {
+        "quantity": 2,
+        "unit": "tablespoons",
+        "name": "melted butter or oil"
+      }
     ],
     "instructions": [
       {
@@ -105,19 +164,23 @@
     "nutrition": [
       {
         "nutrient": "calories",
-        "value": "195 kcal"
+        "quantity": 195,
+        "unit": "kcal"
       },
       {
         "nutrient": "carbs",
-        "value": "26g"
+        "quantity": 26,
+        "unit": "g"
       },
       {
         "nutrient": "protein",
-        "value": "5g"
+        "quantity": 5,
+        "unit": "g"
       },
       {
         "nutrient": "fat",
-        "value": "7g"
+        "quantity": 7,
+        "unit": "g"
       }
     ]
   }
