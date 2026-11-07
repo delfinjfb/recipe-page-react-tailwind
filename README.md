@@ -43,6 +43,7 @@ Check out the live demo: [\[Demo\]](https://recipe-page-react-tailwind-delfin.ve
 ## Technologies Used
 
 - **React**: A JavaScript library for building user interfaces.
+- **Vite**: Dev server and build tool (replaced Create React App, which is deprecated). Tests run with **Vitest**.
 - **React Router**: For managing dynamic routing and custom URLs.
 - **Tailwind CSS**: A utility-first CSS framework for styling.
 - **Matomo Analytics**: For tracking user interactions.
@@ -72,7 +73,9 @@ Check out the live demo: [\[Demo\]](https://recipe-page-react-tailwind-delfin.ve
    ```bash
    npm start
    ```
-4. Open your browser at http://localhost:3000.
+4. Open your browser at http://localhost:5173.
+
+Other scripts: `npm run build` (output in `build/`), `npm run preview` (serve the build locally), `npm test`, `npm run lint`.
 
 ---
 
@@ -110,8 +113,8 @@ To use Matomo:
   │ └── TimeInfo.jsx
   ├── data/
   │ └── recipes.json
-  ├── App.js
-  ├── index.js
+  ├── App.jsx
+  ├── index.jsx
   └── styles/
   └── app.css
 ```

@@ -1,9 +1,10 @@
 /* src/index.css */
+/* @import must come before any other rule, or the browser ignores it. */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Young+Serif&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Young+Serif&display=swap');
 
 body {
   font-family: 'Outfit', sans-serif;
