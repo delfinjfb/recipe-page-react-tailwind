@@ -1,9 +1,9 @@
 // app/components/Footer.tsx
 
 export default function Footer() {
-  const codedByUrl = process.env.REACT_APP_LINK_CODED_DELFIN;
+  const codedByUrl = import.meta.env.REACT_APP_LINK_CODED_DELFIN;
 
-  const improvedRecipeUrl = process.env.REACT_APP_LINK_RECIPE_IMPROVED;
+  const improvedRecipeUrl = import.meta.env.REACT_APP_LINK_RECIPE_IMPROVED;
 
   return (
     <footer className="text-center text-sm text-white py-4 bg-black">
